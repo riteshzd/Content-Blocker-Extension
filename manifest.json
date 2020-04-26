@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Word Blocker",
+    "version": "0.1.0",
+    
+    "description": "This extension blocks certain words in a webpage as per user's choice",
+    
+    "icons":
+        {
+            "48": "icons/logo48.png"
+        },
+
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["contentBlocker.js"],
+            "css": ["styles.css"]
+        }
+    ]
+    
+}
