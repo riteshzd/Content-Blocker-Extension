@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="popUpBodyStyles.css">
+    </head>
+    <body>
+        <p class="PopUp">
+            <input type="text" id="words" placeholder="Add words"><br/>
+            <input type="button" id="submitButton" value="Click to block">
+        </p>
+        <script>
+            function myFunction(Button){
+                var x = Button.value;
+                document.getElementById("display").innerHTML = x;
+            }
+        </script>
+    </body>
+</html>
